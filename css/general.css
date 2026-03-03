@@ -1,3 +1,7 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
 .logo {
   text-align: center;
 }
@@ -8,28 +12,29 @@
 
 .category_list_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr 1fr));
-  gap: 1rem;
-  max-width: 900px;
-  margin: 2rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; /* mere luft mellem kort */
+  max-width: 1000px;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
 .category_card {
   display: block;
-  padding: 1.5rem;
-  background: rgb(231, 204, 204);
-  border-radius: 8px;
+  padding: 3.5rem 5.5rem;
+  background: #f4dddd; /* lidt blødere farve */
+  border-radius: 16px; /* rundere hjørner */
   text-align: center;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  border: 1px solid #ded4d4;
-  transition: 0.2s;
+  color: #5a4444;
+  font-weight: 800;
+  border: none; /* fjern hård kant */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* blød skygge */
+  transition: all 0.25s ease;
 }
 
 .category_card:hover {
-  background: #f1e6e6;
+  background: #f2dede;
   transform: scale(1.03);
 }
 
@@ -37,7 +42,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
-  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -78,12 +82,29 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background: red;
+  background: rgb(51, 43, 43);
   color: white;
   padding: 5px 8px;
   border-radius: 5px;
   font-size: 0.8rem;
 }
+
+.read_more_button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background: rgb(232, 192, 192);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.read_more_button:hover {
+  background: #f2dede;
+}
+
 .product_page {
   max-width: 1000px;
   margin: 2rem auto;
@@ -135,3 +156,23 @@
 .back_button:hover {
   background: #f1e6e6;
 }
+/* 
+.page_links {
+  margin: 20px 0 40px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.page_links a {
+  text-decoration: none;
+  background: rgb(234, 213, 213);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.page_links a:hover {
+  background: #444;
+} */

@@ -176,3 +176,39 @@ img {
 .page_links a:hover {
   background: #444;
 } */
+.product_card.soldOut {
+  opacity: 0.5;
+  position: relative;
+}
+
+.product_card.soldOut::after {
+  content: "SOLD OUT";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.old_price {
+  text-decoration: line-through;
+  color: grey;
+  margin-right: 10px;
+}
+
+.discount_badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.product_card {
+  position: relative;
+}
